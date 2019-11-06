@@ -1,0 +1,28 @@
+#e {
+    background-color: rgb(58, 55, 55);
+};
+
+#t {
+    width: 50%;
+    height: 50%;
+};
+#q {
+    background-color: rgb(71, 162, 236);
+};
+#d {
+    color: rgb(255, 255, 255);
+};
+
+@media (max-width: 600px){
+    ion-content {
+        --ionic-background-color: rgb(255, 0, 0);
+    }
+}
+
+@media (orientation: landscape){
+    .u{display: none}
+}
+
+@media (orientation: portrait){
+    .x{display: none}
+}
