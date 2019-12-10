@@ -19,6 +19,12 @@
     }
 }
 
+@media (min-width: 500px){
+    #q {
+        background-color: rgb(255, 235, 53);
+    }
+}
+
 @media (orientation: landscape){
     .u{display: none}
 }

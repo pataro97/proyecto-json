@@ -10,18 +10,18 @@
 <ion-content id="q"> 
   <ion-grid id="q">
     <ion-row>
-      <ng-container *ngFor="let user of users | async">
-        <ion-col *ngIf="marca == user.marca" size-xs="12" size-sm="6" size-md="6" size-lg="4" size-xl="2" >
+      <ng-container *ngFor="let guitar of guitars | async">
+        <ion-col *ngIf="marca == guitar.marca" size-xs="12" size-sm="6" size-md="6" size-lg="4" size-xl="2" >
             <ion-card id="e">
             <ion-item >
-              <h2>{{ user.marca }}</h2>
+              <h2>{{ guitar.marca }}</h2>
             </ion-item>
             <ion-card-content id="d">
-                <img id="t" [src]="user.image">
-                Id: {{ user.id }} <br>
-                Modelo: {{ user.modelo }} <br>
-                <p class="u">Color: {{ user.color }} </p><br>
-                <p class="x"> Precio: {{ user.price }}</p>
+                <img id="t" [src]="guitar.image">
+                Id: {{ guitar.id }} <br>
+                Modelo: {{ guitar.modelo }} <br>
+                <p class="u">Color: {{ guitar.color }} </p><br>
+                <p class="x"> Precio: {{ guitar.price }}</p>
             </ion-card-content>
           </ion-card>
         </ion-col>

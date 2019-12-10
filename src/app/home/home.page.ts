@@ -7,9 +7,9 @@ import { map }  from  'rxjs/operators';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-  users: any;
+  guitars: any;
   constructor(private httpClient: HttpClient) {
-    this.users = 
+    this.guitars = 
     this.httpClient.get('https://api.myjson.com/bins/1ccmr0').pipe(map(res => 
     res['results']));
   }
